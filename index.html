@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramarajan Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <a href="" class="brand" data-aos="zoom-in" data-aos-duration="1000" style="color:crimson;">Ramarajan</a>
+        <div class="menu-btn "></div>
+        <div class="navigation">
+            <a href="#"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" style="color:white;">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" style="color:white;">Skill</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" style="color:white;">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" style="color:white;">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="color:white;">About</a>
+        </div>
+    </header>
+    <section class="main" id="main">
+        <div class="content">
+            <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800" style="color:cyan;">Hello i'm <br><span style="color:cyan;">Ramarajan</span></h2>
+            <div class="animated-text"data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
+                <h3>Full Stack Developer</h3>
+                <h3>Programmer</h3>
+            </div>
+            <i class="fa-solid fa-house"></i>
+            <a href="#" class="btn"data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1000">See My Work</a>
+            <div class="media-icons">
+                <a href="#"data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1200"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1300"><i class="fab-fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <script>
+        const menuBtn=document.querySelector(".menu-btn");
+        const navigation=document.querySelector(".navigation");
+        const navigationitems=document.querySelector(".navigation a");
+        menuBtn.addEventListener("click",()=>{
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        })
+
+
+    </script>
+</body>
+</html>
