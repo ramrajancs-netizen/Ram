@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        h1 {
+            background-color: cyan;
+            color: black;
+            font-style: italic;
+            text-decoration: overline;    
+            display:block;
+            text-align: center;
+            border-radius: 500px;
+        }
+        button{
+            background-color: red;
+            color: white;
+            padding-bottom: 5px;
+            border-radius: 25px;
+        }
+        #result{
+            color:black;
+        }
+    </style>
+     <script type="text/javascript">
+        function bmi()
+        {
+            let chInput=prompt("Enter your weight:");
+            let htInput=prompt("Enter your height:");
+
+            let weight=parseFloat(chInput);
+            let heightcm=parseFloat(htInput);
+
+            let height = heightcm / 100;
+
+
+            let bmi= weight / (height * height);
+
+            document.getElementById("result").innerHTML= `your BMI is: ${bmi.toFixed(2)}`;
+        }
+    </script>
+</head>
+<body>
+    
+    <h1>This is a BMI Calculator</h1>
+   <center> <button onclick="bmi()">calculate</button> </center>
+    <div id="result"></div>
+</body>
+</html>
